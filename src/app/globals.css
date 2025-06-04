@@ -33,3 +33,16 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
+
+input {
+  @apply border-black border-1 text-center;
+  @apply max-w-[100px];
+}
+
+@utility form-grp {
+  @apply flex flex-row mb-4 gap-4;
+}
+
+label {
+  @apply min-w-[100px]
+}
