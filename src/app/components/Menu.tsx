@@ -3,9 +3,20 @@ import Link from "next/link";
 function Menu() {
   return (
     <>
-      <Link href="/calc">Calculator</Link>
-      <Link href="/pse">List of Stocks</Link>
-      <Link href="/trial">Trial</Link>
+      <Link
+        href="/calc"
+        className="hover:text-[#efc24e] hover:underline
+"
+      >
+        Calculator
+      </Link>
+      <Link
+        href="/pse"
+        className="hover:text-[#efc24e] hover:underline
+      "
+      >
+        List of Stocks
+      </Link>
     </>
   );
 }

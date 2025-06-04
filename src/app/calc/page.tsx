@@ -10,7 +10,7 @@ function Calc() {
   const [grossBuy, setGrossBuy] = useState<number>(0);
   const [grossSell, setGrossSell] = useState<number>(0);
 
-  // Fees
+  // Stockbroker's Fees
   const [buyVAT, setBuyVAT] = useState<number>(grossBuy * 0.12);
   const [sellVAT, setSellVAT] = useState<number>(grossSell * 0.12);
 
@@ -28,16 +28,45 @@ function Calc() {
   const [buySCCP, setBuySCCP] = useState<number>(grossBuy * 0.0001);
   const [sellSCCP, setSellSCCP] = useState<number>(grossSell * 0.0001);
 
-  // Sales Transaction Tax
+  // Sales Tax
   const [salesTax, setSalesTax] = useState<number>(grossSell * 0.006);
 
   // Net Trade Amount
   const netBuy = useMemo(() => {
     return grossBuy + buyCommission + buyVAT + buyPSE + buySCCP;
-  });
+  }, [grossBuy, buyCommission, buyVAT, buyPSE, buySCCP]);
   const netSell = useMemo(() => {
     return grossSell + sellCommission + sellVAT + sellPSE + sellSCCP + salesTax;
-  });
+  }, [grossSell, sellCommission, sellVAT, sellPSE, sellSCCP, salesTax]);
+
+  // Net Capital Gain/Loss
+  const netCapital = useMemo(() => {
+    return (
+      grossSell -
+      grossBuy -
+      (buyCommission +
+        buyVAT +
+        buyPSE +
+        buySCCP +
+        sellCommission +
+        sellVAT +
+        sellPSE +
+        sellSCCP +
+        salesTax)
+    );
+  }, [
+    grossSell,
+    grossBuy,
+    buyCommission,
+    buyVAT,
+    buyPSE,
+    buySCCP,
+    sellCommission,
+    sellVAT,
+    sellPSE,
+    sellSCCP,
+    salesTax,
+  ]);
 
   // Memoized change handler using useCallback
   const handleChange = useCallback(() => {
@@ -67,6 +96,7 @@ function Calc() {
     if (!isNaN(numShares) && !isNaN(price)) {
       const calculatedGross = numShares * price;
       setGrossSell(calculatedGross);
+      setSellCommission(Math.max(calculatedGross * 0.0025, 20));
       setSellVAT(Math.max(calculatedGross * 0.0025, 20) * 0.12);
       setSellPSE(calculatedGross * 0.00005);
       setSellSCCP(calculatedGross * 0.0001);
@@ -75,10 +105,12 @@ function Calc() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-[100vh] w-full">
-      <h1 className="text-4xl font-bold my-4">Trading Stocks Calculator</h1>
+    <div className="flex flex-col md:justify-center items-center h-[100vh] w-full">
+      <h1 className="text-4xl font-bold my-4 text-center">
+        Trading Stocks Calculator
+      </h1>
       <section className="flex flex-col justify-center gap-4 md:flex-row">
-        <div className="w-[300px] h-full md:w-[400px] border-red-950 border-2 p-4">
+        <div className="w-[90vw] h-full md:w-[400px] border-red-950 border-2 p-4 rounded-2xl">
           <form ref={buyForm} onChange={handleChange}>
             <fieldset className="flex flex-col">
               <legend className="my-4 font-bold text-center text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#141c4e] to-[#efc24e]">
@@ -108,7 +140,7 @@ function Calc() {
               </div>
 
               <div className="form-grp">
-                <label htmlFor="grossBuy">Gross Amount:</label>
+                <label htmlFor="grossBuy">Buying Price:</label>
                 <input
                   type="number"
                   id="grossBuy"
@@ -161,7 +193,7 @@ function Calc() {
               </div>
               <div className="form-grp">
                 <label htmlFor="netBuy" className="font-bold">
-                  Buying Trading Cost:
+                  Buying Trading Cost: Php
                 </label>
                 <input
                   type="number"
@@ -177,7 +209,7 @@ function Calc() {
 
         {/* Sell Part */}
 
-        <div className="w-[300px] h-full md:w-[400px] border-red-950 border-2 p-4">
+        <div className="w-[90vw] h-full md:w-[400px] border-red-950 border-2 p-4 rounded-2xl">
           <form ref={sellForm} onChange={handleSellChange}>
             <fieldset className="flex flex-col">
               <legend className="my-4 font-bold text-center text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#141c4e] to-[#efc24e]">
@@ -207,7 +239,7 @@ function Calc() {
               </div>
 
               <div className="form-grp">
-                <label htmlFor="grossSell">Gross Amount:</label>
+                <label htmlFor="grossSell">Selling Price:</label>
                 <input
                   type="number"
                   id="grossSell"
@@ -271,7 +303,7 @@ function Calc() {
 
               <div className="form-grp">
                 <label htmlFor="netSell" className="font-bold">
-                  Selling Trading Cost:
+                  Selling Trading Cost: Php
                 </label>
                 <input
                   type="number"
@@ -285,6 +317,21 @@ function Calc() {
           </form>
         </div>
       </section>
+      <div className="my-4">
+        <div className="form-grp">
+          <label htmlFor="netCapital" className="font-bold">
+            Net Capital Gain/Loss (+/-): Php
+          </label>
+          <input
+            type="number"
+            id="netCapital"
+            name="netCapital"
+            value={netCapital.toFixed(4)}
+            disabled
+            className={netCapital < 0 ? "bg-red-600 text-white" : "bg-green-600 text-white"}
+          />
+        </div>
+      </div>
     </div>
   );
 }
