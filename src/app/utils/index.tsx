@@ -55,7 +55,6 @@ export const fetchAllStocks = async (): Promise<StockType[]> => {
     }
 
     newStocks.forEach((stock) => stocks.push(stock as StockType));
-    console.log(newStocks);
     pageNo += 1;
   }
   return stocks;

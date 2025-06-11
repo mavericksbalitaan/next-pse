@@ -157,7 +157,7 @@ function Calc() {
                   type="number"
                   id="buyCommission"
                   name="buyCommission"
-                  value={buyCommission.toFixed(4)}
+                  value={buyCommission.toFixed(2)}
                   disabled
                 />
               </div>
@@ -167,7 +167,7 @@ function Calc() {
                   type="number"
                   id="buyVAT"
                   name="buyVAT"
-                  value={buyVAT.toFixed(4)}
+                  value={buyVAT.toFixed(2)}
                   disabled
                 />
               </div>
@@ -256,7 +256,7 @@ function Calc() {
                   type="number"
                   id="sellCommission"
                   name="sellCommission"
-                  value={sellCommission.toFixed(4)}
+                  value={sellCommission.toFixed(2)}
                   disabled
                 />
               </div>
@@ -266,7 +266,7 @@ function Calc() {
                   type="number"
                   id="sellVAT"
                   name="sellVAT"
-                  value={sellVAT.toFixed(4)}
+                  value={sellVAT.toFixed(2)}
                   disabled
                 />
               </div>
@@ -326,9 +326,13 @@ function Calc() {
             type="number"
             id="netCapital"
             name="netCapital"
-            value={netCapital.toFixed(4)}
+            value={netCapital.toFixed(2)}
             disabled
-            className={netCapital < 0 ? "bg-red-600 text-white" : "bg-green-600 text-white"}
+            className={
+              netCapital < 0
+                ? "bg-red-600 text-white"
+                : "bg-green-600 text-white"
+            }
           />
         </div>
       </div>
