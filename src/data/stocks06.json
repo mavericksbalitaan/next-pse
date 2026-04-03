@@ -1,1 +1,241 @@
-[{"c1":"SP New Energy Corporation","c2":"SPNEC","c3":"Industrial","c4":"Electricity, Energy, Power & Water","c5":"2021-12-17 00:00:00"},{"c1":"Supercity Realty Development Corporation","c2":"SRDC","c3":"Industrial","c4":"Construction, Infra. & Allied Services","c5":"2003-12-19 00:00:00"},{"c1":"SSI Group, Inc.","c2":"SSI","c3":"Services","c4":"Retail","c5":"2014-11-07 00:00:00"},{"c1":"STI Education Systems Holdings, Inc.","c2":"STI","c3":"Services","c4":"Education","c5":"1976-10-12 00:00:00"},{"c1":"Steniel Manufacturing Corporation","c2":"STN","c3":"Industrial","c4":"Other Industrials","c5":"1993-11-22 00:00:00"},{"c1":"Vistamalls, Inc.","c2":"STR","c3":"Property","c4":"Property","c5":"1970-11-17 00:00:00"},{"c1":"Suntrust Resort Holdings, Inc.","c2":"SUN","c3":"Property","c4":"Property","c5":"2059-02-11 00:00:00"},{"c1":"TKC Metals Corporation","c2":"T","c3":"Industrial","c4":"Construction, Infra. & Allied Services","c5":"2001-07-20 00:00:00"},{"c1":"Transpacific Broadband Group Int`l. Inc.","c2":"TBGI","c3":"Services","c4":"Information Technology","c5":"2003-12-12 00:00:00"},{"c1":"Cirtek Holdings Philippines Corporation","c2":"TECH","c3":"Industrial","c4":"Electrical Components & Equipment","c5":"2011-11-18 00:00:00"},{"c1":"PLDT Inc.","c2":"TEL","c3":"Services","c4":"Telecommunications","c5":"2053-09-17 00:00:00"},{"c1":"PTFC Redevelopment Corporation","c2":"TFC","c3":"Property","c4":"Property","c5":"2055-12-19 00:00:00"},{"c1":"Top Frontier Investment Holdings, Inc.","c2":"TFHI","c3":"Holding Firms","c4":"Holding Firms","c5":"2014-01-13 00:00:00"},{"c1":"Top Line Business Development Corp.","c2":"TOP","c3":"Industrial","c4":"Electricity, Energy, Power and Water","c5":"2025-04-08 00:00:00"},{"c1":"Harbor Star Shipping Services, Inc. ","c2":"TUGS","c3":"Services","c4":"Transportation Services","c5":"2013-10-30 00:00:00"},{"c1":"Union Bank of the Philippines","c2":"UBP","c3":"Financials","c4":"Banks","c5":"1992-06-29 00:00:00"},{"c1":"Uniholdings Inc.","c2":"UNH","c3":"Property","c4":"Property","c5":"1985-11-21 00:00:00"},{"c1":"United Paragon Mining Corporation","c2":"UPM","c3":"Mining and Oil","c4":"Mining","c5":"1972-08-31 00:00:00"},{"c1":"Upson International Corp.","c2":"UPSON","c3":"Services","c4":"Retail","c5":"2023-04-03 00:00:00"},{"c1":"Universal Robina Corporation","c2":"URC","c3":"Industrial","c4":"Food, Beverage & Tobacco","c5":"1994-03-25 00:00:00"},{"c1":"Vantage Equities, Inc.","c2":"V","c3":"Financials","c4":"Other Financial Institutions","c5":"1993-03-30 00:00:00"},{"c1":"Vitarich Corporation","c2":"VITA","c3":"Industrial","c4":"Food, Beverage & Tobacco","c5":"1995-02-08 00:00:00"},{"c1":"Villar Land Holdings Corp.","c2":"VLC","c3":"Property","c4":"Property","c5":"2016-06-29 00:00:00"},{"c1":"Vista Land & Lifescapes, Inc.","c2":"VLL","c3":"Property","c4":"Property","c5":"2007-06-25 00:00:00"},{"c1":"Victorias Milling Company, Inc.","c2":"VMC","c3":"Industrial","c4":"Food, Beverage & Tobacco","c5":"1993-11-15 00:00:00"},{"c1":"VistaREIT, Inc.","c2":"VREIT","c3":"Property","c4":"Property","c5":"2022-06-15 00:00:00"},{"c1":"Vivant Corporation","c2":"VVT","c3":"Industrial","c4":"Electricity, Energy, Power & Water","c5":"1994-06-23 00:00:00"},{"c1":"PhilWeb Corporation","c2":"WEB","c3":"Services","c4":"Casinos & Gaming","c5":"2069-12-08 00:00:00"},{"c1":"Wellex Industries, Incorporated","c2":"WIN","c3":"Property","c4":"Property","c5":"2058-01-09 00:00:00"},{"c1":"Wilcon Depot, Inc.","c2":"WLCON","c3":"Services","c4":"Retail","c5":"2017-03-31 00:00:00"},{"c1":"Waterfront Philippines, Incorporated","c2":"WPI","c3":"Services","c4":"Hotel & Leisure","c5":"1995-03-17 00:00:00"},{"c1":"Xurpas Inc.","c2":"X","c3":"Small, Medium & Emerging Board","c4":"Small, Medium & Emerging Board","c5":"2014-12-02 00:00:00"},{"c1":"NexGen Energy Corp.","c2":"XG","c3":"Small, Medium & Emerging Board","c4":"Small, Medium & Emerging Board","c5":"2024-07-16 00:00:00"},{"c1":"Zeus Holdings, Inc.","c2":"ZHI","c3":"Holding Firms","c4":"Holding Firms","c5":"1991-07-15 00:00:00"}]
+[
+  {
+    "c1": "SP New Energy Corporation",
+    "c2": "SPNEC",
+    "c3": "Industrial",
+    "c4": "Electricity, Energy, Power & Water",
+    "c5": "2021-12-17 00:00:00"
+  },
+  {
+    "c1": "Supercity Realty Development Corporation",
+    "c2": "SRDC",
+    "c3": "Industrial",
+    "c4": "Construction, Infra. & Allied Services",
+    "c5": "2003-12-19 00:00:00"
+  },
+  {
+    "c1": "SSI Group, Inc.",
+    "c2": "SSI",
+    "c3": "Services",
+    "c4": "Retail",
+    "c5": "2014-11-07 00:00:00"
+  },
+  {
+    "c1": "STI Education Systems Holdings, Inc.",
+    "c2": "STI",
+    "c3": "Services",
+    "c4": "Education",
+    "c5": "1976-10-12 00:00:00"
+  },
+  {
+    "c1": "Steniel Manufacturing Corporation",
+    "c2": "STN",
+    "c3": "Industrial",
+    "c4": "Other Industrials",
+    "c5": "1993-11-22 00:00:00"
+  },
+  {
+    "c1": "Vistamalls, Inc.",
+    "c2": "STR",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "1970-11-17 00:00:00"
+  },
+  {
+    "c1": "Suntrust Resort Holdings, Inc.",
+    "c2": "SUN",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "2059-02-11 00:00:00"
+  },
+  {
+    "c1": "TKC Metals Corporation",
+    "c2": "T",
+    "c3": "Industrial",
+    "c4": "Construction, Infra. & Allied Services",
+    "c5": "2001-07-20 00:00:00"
+  },
+  {
+    "c1": "Transpacific Broadband Group Int`l. Inc.",
+    "c2": "TBGI",
+    "c3": "Services",
+    "c4": "Information Technology",
+    "c5": "2003-12-12 00:00:00"
+  },
+  {
+    "c1": "Cirtek Holdings Philippines Corporation",
+    "c2": "TECH",
+    "c3": "Industrial",
+    "c4": "Electrical Components & Equipment",
+    "c5": "2011-11-18 00:00:00"
+  },
+  {
+    "c1": "PLDT Inc.",
+    "c2": "TEL",
+    "c3": "Services",
+    "c4": "Telecommunications",
+    "c5": "2053-09-17 00:00:00"
+  },
+  {
+    "c1": "PTFC Redevelopment Corporation",
+    "c2": "TFC",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "2055-12-19 00:00:00"
+  },
+  {
+    "c1": "Top Frontier Investment Holdings, Inc.",
+    "c2": "TFHI",
+    "c3": "Holding Firms",
+    "c4": "Holding Firms",
+    "c5": "2014-01-13 00:00:00"
+  },
+  {
+    "c1": "Top Line Business Development Corp.",
+    "c2": "TOP",
+    "c3": "Industrial",
+    "c4": "Electricity, Energy, Power and Water",
+    "c5": "2025-04-08 00:00:00"
+  },
+  {
+    "c1": "Harbor Star Shipping Services, Inc. ",
+    "c2": "TUGS",
+    "c3": "Services",
+    "c4": "Transportation Services",
+    "c5": "2013-10-30 00:00:00"
+  },
+  {
+    "c1": "Union Bank of the Philippines",
+    "c2": "UBP",
+    "c3": "Financials",
+    "c4": "Banks",
+    "c5": "1992-06-29 00:00:00"
+  },
+  {
+    "c1": "Uniholdings Inc.",
+    "c2": "UNH",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "1985-11-21 00:00:00"
+  },
+  {
+    "c1": "United Paragon Mining Corporation",
+    "c2": "UPM",
+    "c3": "Mining and Oil",
+    "c4": "Mining",
+    "c5": "1972-08-31 00:00:00"
+  },
+  {
+    "c1": "Upson International Corp.",
+    "c2": "UPSON",
+    "c3": "Services",
+    "c4": "Retail",
+    "c5": "2023-04-03 00:00:00"
+  },
+  {
+    "c1": "Universal Robina Corporation",
+    "c2": "URC",
+    "c3": "Industrial",
+    "c4": "Food, Beverage & Tobacco",
+    "c5": "1994-03-25 00:00:00"
+  },
+  {
+    "c1": "Vantage Equities, Inc.",
+    "c2": "V",
+    "c3": "Financials",
+    "c4": "Other Financial Institutions",
+    "c5": "1993-03-30 00:00:00"
+  },
+  {
+    "c1": "Vitarich Corporation",
+    "c2": "VITA",
+    "c3": "Industrial",
+    "c4": "Food, Beverage & Tobacco",
+    "c5": "1995-02-08 00:00:00"
+  },
+  {
+    "c1": "Villar Land Holdings Corp.",
+    "c2": "VLC",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "2016-06-29 00:00:00"
+  },
+  {
+    "c1": "Vista Land & Lifescapes, Inc.",
+    "c2": "VLL",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "2007-06-25 00:00:00"
+  },
+  {
+    "c1": "Victorias Milling Company, Inc.",
+    "c2": "VMC",
+    "c3": "Industrial",
+    "c4": "Food, Beverage & Tobacco",
+    "c5": "1993-11-15 00:00:00"
+  },
+  {
+    "c1": "VistaREIT, Inc.",
+    "c2": "VREIT",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "2022-06-15 00:00:00"
+  },
+  {
+    "c1": "Vivant Corporation",
+    "c2": "VVT",
+    "c3": "Industrial",
+    "c4": "Electricity, Energy, Power & Water",
+    "c5": "1994-06-23 00:00:00"
+  },
+  {
+    "c1": "PhilWeb Corporation",
+    "c2": "WEB",
+    "c3": "Services",
+    "c4": "Casinos & Gaming",
+    "c5": "2069-12-08 00:00:00"
+  },
+  {
+    "c1": "Wellex Industries, Incorporated",
+    "c2": "WIN",
+    "c3": "Property",
+    "c4": "Property",
+    "c5": "2058-01-09 00:00:00"
+  },
+  {
+    "c1": "Wilcon Depot, Inc.",
+    "c2": "WLCON",
+    "c3": "Services",
+    "c4": "Retail",
+    "c5": "2017-03-31 00:00:00"
+  },
+  {
+    "c1": "Waterfront Philippines, Incorporated",
+    "c2": "WPI",
+    "c3": "Services",
+    "c4": "Hotel & Leisure",
+    "c5": "1995-03-17 00:00:00"
+  },
+  {
+    "c1": "Xurpas Inc.",
+    "c2": "X",
+    "c3": "Small, Medium & Emerging Board",
+    "c4": "Small, Medium & Emerging Board",
+    "c5": "2014-12-02 00:00:00"
+  },
+  {
+    "c1": "NexGen Energy Corp.",
+    "c2": "XG",
+    "c3": "Small, Medium & Emerging Board",
+    "c4": "Small, Medium & Emerging Board",
+    "c5": "2024-07-16 00:00:00"
+  },
+  {
+    "c1": "Zeus Holdings, Inc.",
+    "c2": "ZHI",
+    "c3": "Holding Firms",
+    "c4": "Holding Firms",
+    "c5": "1991-07-15 00:00:00"
+  }
+]
+

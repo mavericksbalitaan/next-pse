@@ -18,7 +18,7 @@ const stockSlice = createSlice({
   initialState: initialState,
   reducers: {
     addStocks: (state, action: PayloadAction<StockType[]>) => {
-      state.stocks.push(...action.payload);
+      state.stocks = action.payload;
     },
     setLoading: (state, action: PayloadAction<boolean>) => {
       state.loading = action.payload;
