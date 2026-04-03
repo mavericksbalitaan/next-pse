@@ -8,7 +8,7 @@ function Menu() {
         className="hover:text-[#efc24e] hover:underline
 "
       >
-        Calculator
+        Trading Stocks Calculator
       </Link>
       <Link
         href="/pse"

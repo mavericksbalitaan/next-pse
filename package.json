@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.1",
-    "nanoid": "^5.1.5",
     "next": "15.3.2",
     "node-html-parser": "^7.0.1",
     "react": "^19.0.0",

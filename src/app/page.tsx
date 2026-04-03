@@ -1,25 +1,11 @@
 import Logo from "./components/Logo";
 import Stocks from "./components/Stocks";
-import allStocks from "./lib/allStocks.tsx";
+import allStocks from "./lib/allStocks";
 
-async function Home() {
-  try {
-    const stocks = allStocks() || [];
-		console.log(stocks);
+export default function Home() {
       return (
         <>
           <Logo />
-          <Stocks stocks={stocks} />
         </>
       )
-  } catch (error) {
-    console.log(error);
-    return (
-	<>
-	<Logo />
-		<p>No stock data available</p>;
-		</>)
-  }
 }
-
-export default Home;
