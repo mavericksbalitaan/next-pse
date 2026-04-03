@@ -10,6 +10,7 @@ export const fetchStocks = async (pageNo: number) => {
 
     const response = await fetch(endpoint, API_OPTIONS);
     const data = await response.text();
+		console.log(data);
     const parsedhtml = parse(data);
     const list = parsedhtml.querySelector(".list tbody");
     const nodes = list?.querySelectorAll("tr");

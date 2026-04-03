@@ -1,21 +1,24 @@
 import Logo from "./components/Logo";
 import Stocks from "./components/Stocks";
-import { fetchAllStocks } from "./utils";
+import allStocks from "./lib/allStocks.tsx";
 
 async function Home() {
   try {
-    const stocks = await fetchAllStocks();
-    if (stocks.length > 0) {
+    const stocks = allStocks() || [];
+		console.log(stocks);
       return (
         <>
           <Logo />
           <Stocks stocks={stocks} />
         </>
-      );
-    }
+      )
   } catch (error) {
     console.log(error);
-    return <p>No stock data available</p>;
+    return (
+	<>
+	<Logo />
+		<p>No stock data available</p>;
+		</>)
   }
 }
 
