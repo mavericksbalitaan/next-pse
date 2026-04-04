@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "pse",
+      name: "next-pse",
       script: "yarn",
       args: "start",
       watch: true,
