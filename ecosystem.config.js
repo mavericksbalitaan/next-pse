@@ -3,11 +3,9 @@ module.exports = {
     {
       name: "next-pse",
       script: "yarn",
-      args: "start",
-      watch: true,
+      args: "start -p 5004",
       env: {
-        NODE_ENV: "production",
-        PORT: 5004,
+	      NODE_ENV: "production"
       },
     },
   ],
